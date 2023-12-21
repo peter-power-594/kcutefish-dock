@@ -2,21 +2,27 @@
 
 CutefishOS application dock.
 
-## Dependencies
+## OpenMandriva Dependencies
 
 ```shell
-sudo pacman -S gcc cmake qt5-base qt5-quickcontrols2 kwindowsystem
+sudo dnf in task-develop
+sudo dnf install lib64Qt5QuickControls2-devel kwindowsystem-x11
 ```
 
-You also need [`fishui`](https://github.com/cutefishos/fishui) and [`libcutefish`](https://github.com/cutefishos/libcutefish).
+You also need [`fishui`](https://github.com/peter-power-594/kcutefish-fishui) and [`libcutefish`](https://github.com/peter-power-594/kcutefish-libcutefish).
 
-## Build and Install
+## Build
 
-```
+```shell
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
 make
+```
+
+## Install
+
+```shell
 sudo make install
 ```
 
