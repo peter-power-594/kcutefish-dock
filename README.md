@@ -26,6 +26,13 @@ make
 sudo make install
 ```
 
+## Uninstall
+
+```shell
+rm /usr/bin/cutefish-dock
+rm /etc/cutefish-dock-list.conf
+```
+
 ## License
 
 This project has been licensed by GPLv3.
